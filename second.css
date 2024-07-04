@@ -7,10 +7,11 @@
 
 body {
     background-image: url('fantastic.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.container {
+.home {
     display: inline;
     justify-content: space-between;
 }
@@ -125,36 +126,25 @@ button:hover {
 
 .inputbox1,
 .inputbox3,
-.inputbox4 {
+.inputbox4,
+.inputbox2 {
     padding: 10px;
+    margin-left: 50px;
 }
 
-.inputbox3 {
-    padding: 10px;
+.inputbox1,
+.inputbox3,
+.inputbox2{
+    width: 290px;
+    border-radius: 27px;
 
 }
 
-.inputbox1 input {
-    padding: 8px;
-    width: 50%;
-    height: 90%;
-    border-radius: 10px;
+.inputbox3,
+.inputbox2,
+.inputbox4{
+    margin-top: 10px;
 }
-
-.inputbox2 input {
-    padding: 8px;
-    width: 50%;
-    height: 90%;
-    border-radius: 10px;
-}
-
-.inputbox3 input {
-    padding: 8px;
-    width: 50%;
-    height: 90%;
-    border-radius: 10px;
-}
-
 .button123 {
     border: none;
     color: black;
@@ -162,11 +152,11 @@ button:hover {
     text-decoration: none;
     display: block;
     font-size: 13px;
-    margin-top: 35px;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-top: 30px;
+    margin-left: 50px;
+    /* margin-right: 130px; */
     border-radius: 50px;
-    width: 100px;
+    width: 290px;;
 }
 
 .button123:hover {
@@ -174,19 +164,278 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        background-repeat: no-repeat;
+@media (max-width: 450px) {
+    .menu-toggle {
+      display: block;
     }
-    .navbar{
+  
+    .left {
       display: none;
-       }
-       .right{
-        height: 250px;
-       }
-       .left{
-            width: 100%;
-       }
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .menu-toggle:checked ~ .left{
+      display: flex;
+    }
+  
+    .hamburger {
+      transform: rotate(0deg);
+    }
+  
+    .hamburger:before {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger:after {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
 
+
+
+  /* about */
+
+.about{
+    margin-top: 100px;
+}
+.image img{
+    width: 370px; /* Makes the image fully occupy the container */
+    height: auto; /* Keeps the aspect ratio of the image */
+    margin-top: -621px;
+    margin-left: 750px;
+    margin-bottom: 100px;
+}
+.about h1{
+    color: red;
+    margin: auto;
+    width: 22%;
+    padding: 10px;
+}
+.about h3{
+    
+    color: #03A9F4;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.paragraph p{
+    flex: 1; /* Takes up the remaining space */
+    margin-right: 50vw; /* Adds some space between the text and the image */
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.content{
+    display: flex;
+    align-items: flex-start;    /* Align ineitems at the start of the flex contar*/
+    justify-content: space-between; /* Space between the text and the image */
+   
 }
 
+.Services{
+    margin-top: 57px;
+    background-color: black;
+}
+.Services h1{
+  color: red;
+  margin: auto;
+  width: 22%;
+  padding: 10px;
+}
+
+.text-center1 {
+    margin: auto;
+    width: 22%;
+  align-items:center ;
+  color: white;
+}
+
+.text-center2 {
+    margin: auto;
+    width: 30%;
+  align-items:center ;
+  color: white;
+}
+.text-center3 {
+    margin: auto;
+    width: 10%;
+  align-items:center ;
+  color: white;
+}
+.text-center4 {
+  margin: auto;
+  width: 6%;
+align-items:center ;
+color: white;
+}
+.aerobcs ,
+  .free-weight,
+  .kick-boxing{
+    margin-top: 10px;
+  }
+
+
+.aerobcs ,
+  .free-weight,
+  .kick-boxing,
+  .power-yoga,
+  .strength,
+  .zumba{
+    display: inline-block;
+  }
+
+  .aerobcs img{
+    height: 220px;
+    max-width:100%;
+  }
+  .free-weight img{
+    height: 220px;
+    max-width:100%;
+  }
+  .kick-boxing img{
+    height: 220px;
+    max-width:100%;
+  }
+  .power-yoga img{
+    height: 220px;
+    max-width:100%;
+  }
+  .strength img{
+    height: 220px;
+    max-width:100%;
+  }
+  .zumba img{
+    height: 220px;
+    max-width:100%;
+  }
+
+
+  .facility{
+    background-color: black;
+    margin-top: 100px;
+    color: white;
+  }
+  .facility h1{
+  color: red;
+  margin: auto;
+  width: 27%;
+  padding: 10px;
+  }
+.ouradvantages{
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .qualified {
+    display: inline-block;
+  }
+  .qualified h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .qualified p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .mul {
+    display: inline-block;
+  }
+  .mul h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .mul p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .change {
+    display: inline-block;
+  }
+  .change h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .change p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .towel{
+    display: inline-block;
+  }
+  .towel h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .towel p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .traning{
+    display: inline-block;
+  }
+  .traning h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .traning p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .hightech{
+    display: inline-block;
+  }
+  .hightech h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .hightech p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .drinks{
+    display: inline-block;
+  }
+  .drinks h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .drinks p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .wi-fi{
+    display: inline-block;
+  }
+  .wi-fi h3{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  .wi-fi p{
+    margin-left: 100px;
+    display: inline-block;
+    width: 450px;
+    margin-top: 10px;
+  }
