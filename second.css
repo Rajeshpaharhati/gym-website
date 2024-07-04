@@ -163,7 +163,7 @@ button:hover {
     background-color: rgb(214, 198, 198);
     cursor: pointer;
 }
-
+/* 
 @media (max-width: 450px) {
     .menu-toggle {
       display: block;
@@ -190,7 +190,7 @@ button:hover {
     .hamburger:after {
       transform: rotate(-45deg) translate(5px, -5px);
     }
-  }
+  } */
 
 
 
