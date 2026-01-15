@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELCOME TO YOUR GYM</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="W.png" alt="THE GYM Logo" width="50" class="rounded">
+        THE GYM
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#facility">Facility</a></li>
+          <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+        </ul>
+        <button class="btn btn-warning ms-3" id="sub">Join Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">WELCOME TO THE GYM</h1>
+      <p class="lead">Your ultimate fitness experience starts here.</p>
+      <a href="#plans" class="btn btn-lg btn-warning mt-3">Get Started</a>
+    </div>
+  </section>
+  <!-- form design -->
+  <section id="membership" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"> Pleash Fill Up the Form</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="membershipForm" class="p-4 bg-light rounded shadow" action="https://api.web3forms.com/submit"
+            method="POST">
+            <input type="hidden" name="access_key" value="82ec0c1c-0682-4052-9f07-8adc161e5035">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Select your gender:</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- about -->
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 text-warning">About THE GYM</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">Take care of your body. It's the only place you have to live.</p>
+          <p>At THE GYM, our mission is to provide you with the ultimate fitness experience, one that focuses on your
+            specific fitness needs, helps you achieve the results you are after, and invigorates your soul. We guarantee
+            the highest quality equipment and training programs available, an expert staff, special amenities that are
+            often not found in other health clubs, attentive service, and truly sophisticated surroundings.</p>
+          <p>We believe in being different. Not merely for the sake of being dissimilar, but different by being the best
+            in the fitness industry. Our ideology is to provide our members with the best fitness technologies and
+            services that no others can provide.</p>
+          <p>THE GYM is a fitness club brand that specializes in the prestigious market segment of business
+            professionals and working professionals. With our dedication to bringing you the latest fitness
+            technologies, THE GYM is equipped with state-of-the-art fitness gadgets and professional personal trainers.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="man bodybuilder.jpg" alt="Gym Training" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-warning">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="aerobcs.jpg" alt="Aerobics" class="img-fluid rounded mb-3">
+          <h4>Aerobics</h4>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="strength.jpg" alt="Strength" class="img-fluid rounded mb-3">
+          <h4>Strength</h4>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="kick.jpg" alt="Kick Boxing" class="img-fluid rounded mb-3">
+          <h4>Kick Boxing</h4>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="power-yoga.jpg" alt="Power Yoga" class="img-fluid rounded mb-3">
+          <h4>Power Yoga</h4>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="zumba.jpg" alt="Zumba" class="img-fluid rounded mb-3">
+          <h4>Zumba</h4>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="free-weight.jpg" alt="free-weight" class="img-fluid rounded mb-3">
+          <h4>free-weight</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facility Section -->
+  <section id="facility" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 text-warning">Our Advantages</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Qualified Trainers</h4>
+              <p class="card-text">Our certified trainers are dedicated to facilitating engaging and effective classes,
+                ensuring you get the most out of your workout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Multiple Classes</h4>
+              <p class="card-text">We offer a variety of classes including Zumba, Aerobics, Kickboxing, Strength, Power
+                Yoga, and Free Weight to suit all fitness levels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Men and Women's Changing Rooms</h4>
+              <p class="card-text">Comfortable and private changing facilities for all members, designed for your
+                convenience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Towels and Lockers</h4>
+              <p class="card-text">Complimentary towels and secure lockers are provided for your comfort and safety.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Individual Training</h4>
+              <p class="card-text">Personalized training programs with certified trainers to help you achieve your
+                fitness goals.</p>
+              <img src="individual_training.jpeg" alt="Individual Training"
+                class="card-img-bottom img-fluid rounded mt-2">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">High-Tech Gym</h4>
+              <p class="card-text">State-of-the-art equipment and wearable technology to enhance your workout
+                experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Complimentary Drinks</h4>
+              <p class="card-text">Stay hydrated with our complimentary drink offerings during your visit.</p>
+              <img src="energy_drink.jpg" alt="Hydration" class="card-img-bottom img-fluid rounded mt-2"
+                style="max-width: 100px;">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Free Wi-Fi Zone</h4>
+              <p class="card-text">Stay connected with our free Wi-Fi available throughout the facility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-warning">Our Plans</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow plan-card">
+            <div class="card-body">
+              <h3 class="card-title text-success">Basic Package</h3>
+              <h4 class="text-success">₹250 / 30 Days</h4>
+              <p>No Personal Trainer</p>
+              <p>Valid for 30 Days</p>
+              <p>Full Day Access</p>
+              <button class="btn btn-warning">Buy Plan</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow plan-card">
+            <div class="card-body">
+              <h3 class="card-title text-success">Premium Package</h3>
+              <h4 class="text-success">₹1000 / 90 Days</h4>
+              <p>Personal Trainer</p>
+              <p>Valid for 90 Days</p>
+              <p>Full Day Access</p>
+              <p>Free Drink</p>
+              <p>Extra Classes as Needed</p>
+              <button class="btn btn-warning">Buy Plan</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow plan-card">
+            <div class="card-body">
+              <h3 class="card-title text-success">Diamond Package</h3>
+              <h4 class="text-success">₹3000 / 365 Days</h4>
+              <p>Personal Trainer</p>
+              <p>Valid for 365 Days</p>
+              <p>Full Day Access</p>
+              <p>Free Drink</p>
+              <p>Body Massage</p>
+              <p>Extra Classes as Needed</p>
+              <button class="btn btn-warning">Buy Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 THE GYM. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="script.js"></script>
+</body>
+
+</html>

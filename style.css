@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background: url('fantastic.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: transparent;
+    color: #28a745;
+    border: 2px solid #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+#facility .card {
+    background-color: #1a1a1a;
+    border: none;
+}
+
+#facility .card-title {
+    font-size: 1.25rem;
+}
+
+#facility .card-text {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Ensure uniform plan card sizes */
+.plan-card {
+    height: 100%; /* Ensure card takes full height of parent */
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    min-height: 350px; /* Minimum height to accommodate content */
+}
+
+.plan-card p {
+    margin-bottom: 0.5rem;
+    flex-grow: 1; /* Allow text to grow and fill space */
+}
+
+.plan-card button {
+    margin-top: auto; /* Push button to the bottom */
+    width: 100%; /* Full width button for consistency */
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #facility .row-cols-md-2 {
+        row-cols:1;
+    }
+
+    .plan-card .card-body {
+        min-height: 0; /* Reset min-height on small screens */
+    }
+}
